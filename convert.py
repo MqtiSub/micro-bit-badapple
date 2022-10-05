@@ -1,5 +1,5 @@
-f = open('record2.txt','r')
-h = open('record4.txt','a')
+f = open('record.txt','r')
+h = open('BA.txt','a')
 num = 0
 while True:
     line = f.readline()

@@ -19,7 +19,7 @@ while True:
     succeed = True
     num += 1
     if(ok):
-        img = cv2.resize(frame,(80,60))
+        img = cv2.resize(frame,(86,64))
         for line in img:
             for dot in line:
                 if dot[0] >= 130:
