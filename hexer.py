@@ -4,13 +4,13 @@ num = 0
 while True:
     line8 = []
     for i in range(8):
-        file = f.readline()
-        if file == 'finish!!':
+        line = f.readline()
+        if line == 'finish!!':
             print(succeed)
             num = -1
             break
         else:
-            line8.append(file)
+            line8.append(line)
     if num == -1:
         break
     for i in range(86):
