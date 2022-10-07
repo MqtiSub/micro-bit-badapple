@@ -2,9 +2,17 @@ f = open('record.txt','r')
 h = open('BA.txt','a')
 num = 0
 while True:
-    line8 = [None*8]
+    line8 = []
     for i in range(8):
-        line8[i] = f.readline()
+        file = f.readline()
+        if file == 'finish!!':
+            print(succeed)
+            num = -1
+            break
+    if num == -1:
+        break
+        else:
+            line8.append(file)
     for i in range(86):
         unchar = ''
         for j in range(8):
@@ -18,8 +26,5 @@ while True:
     if line == '\n':
         num += 1
         print(f'frame:{num}')
-    elif line == 'finish!!':
-        print('succeed')
-        break
 f.close()
 h.close()
