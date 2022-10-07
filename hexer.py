@@ -9,10 +9,10 @@ while True:
             print(succeed)
             num = -1
             break
-    if num == -1:
-        break
         else:
             line8.append(file)
+    if num == -1:
+        break
     for i in range(86):
         unchar = ''
         for j in range(8):
